@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document 
+
+owl accessibility:
+https://codepen.io/kelsS/pen/LreGKN
+
+*/
+
+a:focus, 
+select:focus,
+option:focus, 
+input:focus, 
+button:focus {outline: 1px dotted #000; }
+
+.menu li:focus-within ul, 
+.langs li:focus-within ul {
+	display: block;
+	overflow: visible;
+    visibility: visible;
+    opacity: 1;
+}
+
+body {
+    color: #333;
+}
+
+a.buttlike.butt_gray {
+    color: #333;
+}
+
+a.buttlike.butt_gray:hover {
+    color: #fff;
+}
+
+.date {
+    color: #555;
+}
+
+.pager a, .pager a.active, .pager a:hover {
+    color: #333;
+}
+
+.tab {padding:1px;}
+
+.tab button {
+	color: #754C29;
+	padding-left: 15px; 
+	padding-right: 15px; 
+	margin-right:0;
+}
+
+.tab button.active {
+    background: #754C29;
+	padding-left: 15px; 
+	padding-right: 15px; 
+	margin-right:0;
+	color:#fff;
+}
+
+.tab2 {padding:1px 0;}
+
+.tab2 button:hover, .tab2 button:focus {
+    outline: 1px dotted #000;
+}
+
+.downloads {
+    padding: 1px 0 15px 0;
+}
+
+.downloads a {
+    margin: 1px 15px 14px 0;
+}
+
+.downloads a:focus {background: #1566ad; color:#fff;}
+
+.accommodation_form input[type="submit"]:focus {
+    cursor: pointer;
+    background: #1566ad;
+}
+
+a.buttlike:focus {background-color:#1566ad; color:#fff; border: 1px solid #1566ad;}
+
+a.header_link:focus {background:#fff; color:#1566ad; border: 1px solid #fff;}
+
+#sync2 {
+    /*display:none;*/
+}
+
+.owl-carousel .owl-item {
+    padding:1px;
+}
+
+.accessibility_only {display:block; text-align:center;}
+
+
+/**/

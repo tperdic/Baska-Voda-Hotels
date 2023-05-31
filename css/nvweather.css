@@ -1,0 +1,153 @@
+.mod-weather h4 {
+    font-size:24px;
+    line-height:24px;
+    font-weight:700;
+    margin:15px 0 0;
+    padding:0
+}
+.mod-weather-now, .mod-weather-forecast{
+	display:table;
+	width:100%;
+}
+.mod-weather-now .weather-icon{
+    display:table-cell;
+    width:50%;
+    vertical-align: top;
+}
+.mod-weather span, .mod-weather a{display:block;}  
+.mod-weather-now .mod-weather-temp{
+    font-size:2em;
+}
+.mod-weather-forecast .weather-icon{
+    font-size:4em;
+}
+.mod-weather-forecast.block div{
+	display:table-row;
+}
+.mod-weather-forecast.block div >*{
+    display:table-cell;
+    width:50%;
+    vertical-align:bottom;
+}
+.mod-weather-forecast.list div{
+    display:table-cell;
+    text-align: center;	
+}
+.mod-weather-forecast.list .mod-weather-day{
+    margin-top: 1em;
+    font-weight: bold;
+}
+.mod-weather a{text-align:center;} 
+
+
+/********************* FONT IKONE *************************/
+@font-face {
+    font-family: 'forecastfont';
+    src: url("fonts/iconvault_forecastfont.eot");
+    src: url("fonts/iconvault_forecastfont.eot#iefix") format("embedded-opentype"), url("fonts/iconvault_forecastfont.woff") format("woff"), url("fonts/iconvault_forecastfont.ttf") format("truetype"), url("fonts/iconvault_forecastfont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+.weather-icon{
+    position:relative;
+    font-family: 'forecastfont';
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    font-size: 6em;
+    padding-bottom: 1em;
+}
+.weather-icon i{
+    font-style: normal;
+}
+.weather-icon > i::before, .weather-icon > i::after{position:absolute;}
+.weather-icon i.sun:after{
+    content: "\f113";
+    color:rgb(255, 165, 0);
+}
+.weather-icon i.moon:after{
+    content: "\f10d";
+    color:rgb(255, 165, 0);
+}
+.weather-icon i.cloud:after, .weather-icon i.clouds:before{
+    content: "\f106";
+    color:rgb(204, 204, 204);
+}
+.weather-icon i.fog:after, .weather-icon i.fogs:before {
+    content: '\f108';
+    color:rgb(204, 204, 204);
+}
+.weather-icon i.clouds:before, .weather-icon i.fogs:before {
+    font-size: 0.5em;
+}
+.weather-icon i.cloud.black:after{
+    color:#000;
+}
+.weather-icon i.bcloud:after  {
+    content: '\f105';
+    color:rgb(204, 204, 204);
+}
+.weather-icon i.bcloud.sun:before{
+    content: "\f101";
+    color:rgb(255, 165, 0);
+}
+.weather-icon i.bcloud.moon:before{
+    content: "\f100";
+    color:rgb(255, 165, 0);
+}
+.weather-icon i.rain:before{
+    content: "\f10a";
+    color: #82b2e4;
+}
+.weather-icon i.rain1:before{
+    content: "\f107";
+    color: #82b2e4;
+}
+.weather-icon i.thunder:after{
+    content: "\f114";
+    color: rgb(255, 165, 0);
+    left: 0.1em;
+}
+.weather-icon i.snow::before, .weather-icon i.sleet::before{
+    content: "\f10b";
+    color:#acd3f3;
+}
+.weather-icon i.sleet::before  {
+    content: "\f10c";
+}
+
+.weather-icon i.snow1::before, .weather-icon i.sleet1::before {
+    content: "\f10b\f10b";
+    color: #acd3f3;
+    letter-spacing: -0.7em;
+    font-size: 0.8em;
+    bottom: -0.1em;
+}
+.weather-icon i.sleet1::before {
+    content: "\f10c\f10c";
+}
+.weather-icon i.no-data::before {
+    content: "?";
+    color: rgb(204, 204, 204);
+}
+
+.mod-weather span .mod-weather-label {
+    display: inline;
+}
+
+.mod-weather-now .weather-icon,
+.mod-weather-now .mod-weather-temp {width:50%; text-align:left; padding:0;}
+.mod-weather span {text-align:left !important;}
+.mod-weather-now, .mod-weather-forecast {padding: 0 0 20px 0; margin-bottom:20px; border-bottom: 1px solid rgba(0,0,0,0.11); }
+.mod-weather-forecast.block div >* {
+    vertical-align: middle;
+}
+
+
+.dark.mod-weather, 
+.dark.mod-weather .mod-weather-source,
+.dark.mod-weather .mod-weather-now .weather-icon,
+.dark.mod-weather .mod-weather-now .mod-weather-temp {color:#fff;}
+.dark.mod-weather .mod-weather-now, .dark.mod-weather .mod-weather-forecast {border-bottom: 1px solid rgba(255,255,255,0.11);}
+
